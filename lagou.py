@@ -33,8 +33,6 @@ def get_page(url,params):
      total_count = json_data['content']['positionResult']['totalCount']
 
      page_number = math.ceil(total_count/15) if math.ceil(total_count/15)<30 else 30
-
-
      get_info(url,page_number)
 
 
